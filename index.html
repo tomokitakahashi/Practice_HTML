@@ -1,0 +1,109 @@
+<!--
+ドットインストール HTML #12 まで
+-->
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf8">
+    <meta name="discription" content="初めてのHTML文書です。">
+    <title>はじめてのHTML</title>
+    <link rel="stylesheet" href="mystyles.css">
+  </head>
+  <body>
+<!--
+グローバル属性
+id: ひとつしかない要素
+class: ページ内に複数ある要素
+-->
+    <p id="message">こんにちは！</p>
+    <p class="message">こんにちは</p>
+    <p class="message active">こんにちは</p> <!-- 二つのクラスを持っている-->
+    <p class="message" style="background:blue;">こんにちは</p>
+
+<!--
+header:
+footer:
+nav: ナビゲーション
+article: 独立しているコンテンツ
+aside: 副次的なコンテンツ
+section: 何らかの見出しをつけて情報整理をする
+h1 - h6:
+-->
+<!--
+p: 段落
+hr: 水平線
+pre: 改行や字下げを保持
+blockquate: 引用
+div: スタイリング
+-->
+<!--
+ol: (ordered list) / ul (unordered list) / li (list item)
+dl: (definition list) / dt (definition term) / dd (definition description)
+-->
+    <header>
+      <h1>おいしいごはん!</h1>
+      <nav>
+       ホーム
+       このサイトについて
+       プロフィール
+      </nav>
+    </header>
+    <section>
+      <h1>今月の美味しいごはん</h1>
+        <article>
+          <h1>美味しいごはん #12</h1>
+          <div style="background:blue;">
+            <p>至高のTKG</p>
+            <hr>
+            <p>ところであの件は？</p>
+          </div>
+          <h2>材料</h2>
+          <ul>
+            <li>卵</li>
+            <li>醤油</li>
+            <li>ご飯</li>
+          </ul>
+          <h2>手順</h2>
+          <ol>
+            <li>かける</li>
+            <li>まぜる</li>
+          </ol>
+          <h2>定義</h2>
+          <ol>
+            <dt>TKG</dt>
+            <li>TAMAGO KAKE GOHAN</li>
+          </ol>
+          <pre>
+            poem
+             poem
+              poem
+          </pre>
+          <blockquote>
+            引用
+          </blockquote>
+        </article>
+    </section>
+    <section>
+      <h1>新着の美味しいご飯</h1>
+      <article>
+        <h1>美味しいご飯</h1>
+        はもしゃぶ
+      </article>
+      <article>
+        <h1>おいしいごはん #31</h1>
+        スリランカカレー
+      </article>
+    </section>
+    <aside>
+      <h1>おすすめのレシピ本</h1>
+      - book1
+      - book2
+      - book3
+      - book4
+    </aside>
+    <footer>
+      このサイトは @takahshiによって管理されています
+    </footer>
+  </body>
+</html>
